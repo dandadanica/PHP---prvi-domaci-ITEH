@@ -25,7 +25,7 @@ if (isset($_POST['frizerski_salon_naziv'])) {
         <script src="//cdn.ckeditor.com/4.5.5/basic/ckeditor.js"></script>
 
         <script>
-            $.get("kontroler.php", {auto_servis: "prikaz"})
+            $.get("kontroler.php", {frizerski_salon: "prikaz"})
                     .done(function (data) {
                         var ispis = '';
                         var podaci = JSON.parse(data);
